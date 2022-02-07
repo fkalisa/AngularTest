@@ -1,0 +1,20 @@
+
+.title {
+  color: blueviolet;
+}
+
+
+::ng-deep .mat-accent .mat-slider-thumb {
+  background-color: gray;
+}
+::ng-deep .mat-accent .mat-slider-thumb-label {
+  background-color: gray;
+}
+::ng-deep .mat-accent .mat-slider-track-fill {
+  background-color: gray;
+}
+
+.numericalValue{
+  color: blueviolet;
+  font-weight: bold;
+}

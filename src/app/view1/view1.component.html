@@ -1,0 +1,8 @@
+<mat-card class="main-card">
+
+  <mat-card-header>
+    <mat-card-title class="mat-title title">View1</mat-card-title>
+  </mat-card-header>
+  <mat-slider min="1" max="100" [(ngModel)]= "value" (click)="update()"> </mat-slider> <span class="numericalValue">{{ value }}</span>
+</mat-card>
+

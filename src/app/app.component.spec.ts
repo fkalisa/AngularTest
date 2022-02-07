@@ -26,10 +26,17 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('AngularTest');
   });
 
-  it('should render title', () => {
+  it('should render the link View1 ', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('AngularTest app is running!');
+    expect(compiled.querySelector('.content ul')?.textContent).toContain('View1');
+  });
+
+  it('should render the link View2 ', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('.content ul')?.textContent).toContain('View2');
   });
 });
